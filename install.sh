@@ -16,6 +16,8 @@ mediaPath="/mnt/EmbyMedia"
 AVMediaPath="/mnt/EmbyMedia/AV"
 ITMediaPath="/mnt/EmbyMedia/IT"
 MOVIEMediaPath="/mnt/EmbyMedia/MOVIE"
+TVMediaPath="/mnt/EmbyMedia/MOVIE"
+
 
 if [ ! -d "$mediaPath" ]; then
     mkdir "$mediaPath"
@@ -31,4 +33,7 @@ fi
 
 if [ ! -d "$MOVIEMediaPath" ]; then
   mkdir "$MOVIEMediaPath"
+fi
+if [ ! -d "$TVMediaPath" ]; then
+  mkdir "$TVMediaPath"
 fi
